@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
+</head>
+
+<body>
+    <header>
+        <nav id="apartados">
+            <a href="fotos.html">
+                <i class="fas fa-camera"></i>
+            </a>
+            <ul>
+                <li><a href="Producto.html">Producto</a></li>
+                <li><a href="Plastico.html">Plástico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1 id="titulo">SEGUNDA VIDA</h1>
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="img/i copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/a copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/j copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/b copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/l copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/c copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/o copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/d copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/q copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/e copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/r copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/f copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/s copia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="img/h copia.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094; </a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <!--
+    -->
+    <div class="slideshow-container2">
+        <div class="mySlides2">
+            <img src="img/i.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/a.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/j.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/b.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/l.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/c.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/o.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/d.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/q.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/e.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/r.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/f.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/s.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="img/h.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1,1)">&#10094; </a>
+        <a class="next" onclick="plusSlides(1,1)">&#10095; </a>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+    var slideIndex = [1, 1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {
+            slideIndex[no] = 1
+        }
+        if (n < 1) {
+            slideIndex[no] = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+    }
+</script>
+
+</html>

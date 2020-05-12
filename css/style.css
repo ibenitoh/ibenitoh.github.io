@@ -1,0 +1,248 @@
+/* {
+    box-sizing: border-box;
+    border: 1px solid white;
+}/**/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Poppins', serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#titulo{
+    font-weight: 100;
+    font-size:  70px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 900px;
+    text-align: justify;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+    text-indent: 30px;
+}
+
+
+body li {
+    list-style: none;
+    max-width: 750px;
+    justify-content: center;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.especial {
+    font-family: 'Poppins', serif;
+    font-style: italic;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 720px;
+}
+
+header {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    margin-top: 40px;
+    margin-left: 200px;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-left: 10px;
+}
+
+nav ul li {
+    margin: 0px 5px;
+    text-transform: uppercase;
+}
+
+nav a {
+    width: 40px;
+    height: 40px;
+}
+
+nav a i{
+    color: white;
+    vertical-align: middle;
+    font-size: 25px;
+    transition: 0.7s;
+}
+
+nav a i:hover {
+    font-size: 35px;
+    color: grey;
+}
+
+#apartados {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    line-height: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#apartados ul {
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    width: 500px;
+    flex-direction: row;
+    padding-top: 3px;
+}
+
+#apartados ul li {
+    margin: 0px 5px;
+    text-transform: uppercase;
+}
+
+#apartados ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.7s;
+    font-weight: 200;
+}
+
+#apartados ul li a:hover {
+    color: grey;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+nav ul {
+    display: flex;
+    width: 300px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', serif;
+    color: white;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+footer {
+    color: black;
+    font-family: 'Poppins', serif;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 50px;
+    padding: 3px;
+    background-color: #e8e8e8;
+    position: fixed;
+    bottom: 0;
+}
+
+#fotos{
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Slideshow container2 */
+.slideshow-container2 {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    margin-top: -7px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: lightslategrey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #e8e8e81c;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
